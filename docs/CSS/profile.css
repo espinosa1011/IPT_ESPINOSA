@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222; /* Dark navbar background */
+    padding: 15px 30px;
+    border-bottom: 2px solid #ff6f00; /* Orange border */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px; 
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ff6f00; /* Orange text */
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f0f0f0; /* Light text */
+    padding: 5px 20px;
+    transition: background 0.3s;
+    border-left: 2px solid #ff6f00; /* Orange border between buttons */
+}
+
+.nav-links a:first-child {
+    border-left: none; /* Remove border from the first button */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 111, 0, 0.2); /* Orange highlight on hover */
+    border-radius: 5px;
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.main-image {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.main-content {
+    width: 45%;
+    margin-right: 5%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222; /* Dark background */
+}
+
+.main-content h1 {
+    font-size: 40px;
+    color: #ff6f00; /* Orange heading */
+}
+
+.main-content p {
+    font-size: 20px;
+}
+
+/* Thumbnails styling */
+.thumbnails {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.thumbnail-item {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.thumbnail-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #444;
+    border-radius: 4px;
+    transition: box-shadow 0.3s;
+}
+
+.thumbnail-item img:hover {
+    box-shadow: 0 4px 15px rgba(255, 111, 0, 0.4); /* Orange shadow on hover */
+}
+
+/* Heading Style */
+h1 {
+    text-align: center; /* Center the heading */
+    color: #ff6f00; /* Orange color */
+    font-size: 45px; /* Adjust font size as needed */
+    margin: 20px 0; /* Add spacing around the heading */
+    font-weight: bold; /* Make it bold */
+    padding-top: 5%;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Reduced padding for a smaller section */
+    padding-left: 60px; /* Adjust left padding if needed */
+    margin: 20px auto;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a); /* Subtle gradient background */
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    max-width: 1300px; /* Decrease width for a smaller section */
+    height: 600px; /* Set a specific height if needed (optional) */
+    border: 2px solid #ff6f00; /* Orange border for emphasis */
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.profile-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%; /* Circle profile image */
+    border: 4px solid #ff6f00; /* Orange border */
+    object-fit: cover; /* Ensure the image fits perfectly */
+    box-shadow: 0 4px 10px rgba(255, 111, 0, 0.5); /* Soft glow */
+}
+
+.profile-info {
+    margin-left: 30px;
+    color: #f0f0f0; /* Light text */
+    font-size: 23px;
+    line-height: 1.8;
+    flex: 1;
+    padding-left: 60px;
+}
+
+.profile-heading {
+    font-size: 26px;
+    color: #ff6f00; /* Orange heading */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6f00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.icon {
+    color: #ff6f00; /* Orange icons */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Bio Section */
+.bio-section {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 1600px;
+    margin: 30px auto;
+}
+
+.bio-heading, .skills-heading, .education-heading {
+    font-size: 42px;
+    color: #ff6f00; /* Orange text */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6f00;
+    padding-bottom: 5px;
+}
+
+.bio-text, .education-text {
+    font-size: 30px;
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.skills-list, .education-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.skills-list li, .education-list li {
+    font-size: 30px;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.skills-subheading {
+    font-size: 24px;
+    color: #ff6f00;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff6f00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 1600px;
+    margin: 30px auto;
+}
+
+.skills-heading {
+    font-size: 42px;
+    color: #ff6f00; /* Orange text */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6f00;
+    padding-bottom: 5px;
+}
+
+.skills-text {
+    font-size: 30px;
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+/* Education Section */
+.education-section {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 1600px;
+    margin: 30px auto;
+}
+
+.education-heading {
+    font-size: 30px;
+    color: #ff6f00; /* Orange text */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6f00;
+    padding-bottom: 5px;
+}
+
+.education-text {
+    font-size: 20px;
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.education-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.education-list li {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Sections Below */
+.sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #222; /* Dark background */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #444; /* Subtle border */
+    transition: transform 0.3s;
+}
+
+.section img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Heading Style for Sections */
+.section-heading {
+    font-size: 24px;
+    color: #ff6f00; /* Orange text */
+    margin-top: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff6f00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Description Style for Sections */
+.section-description {
+    font-size: 16px;
+    color: #f0f0f0; /* Light text */
+    margin-top: 10px;
+}

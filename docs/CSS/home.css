@@ -1,0 +1,138 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222; /* Dark navbar background */
+    padding: 15px 30px;
+    border-bottom: 2px solid #ff6f00; /* Orange bottom border */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ff6f00; /* Orange logo text */
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f0f0f0; /* Light text */
+    padding: 5px 20px;
+    transition: background 0.3s;
+    border-left: 2px solid #ff6f00; /* Orange line between buttons */
+}
+
+.nav-links a:first-child {
+    border-left: none; /* No border on the first link */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 111, 0, 0.2); /* Orange background on hover */
+    border-radius: 5px;
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    padding: 20px;
+    margin: 20px auto; /* Centers the container */
+    margin-top: 50px;
+    max-width: 1500px; /* Restricts the container width */
+    background-color: #222; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Left side image */
+.main-image {
+    flex: 1 1 40%; /* Allows flexibility for resizing */
+    margin: 10px;
+    text-align: center; /* Centers the image in its container */
+}
+
+.main-image img {
+    width: 100%; /* Scales nicely within the container */
+    max-width: 600px; /* Limits the maximum width */
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ff6f00; /* Orange border */
+}
+
+/* Right side content */
+.main-content {
+    flex: 1 1 50%; /* Allows flexibility for resizing */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6f00; /* Orange heading */
+}
+
+.main-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f0f0f0; /* Light text */
+    margin-bottom: 20px;
+}
+
+/* Buttons container */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    justify-content: flex-start; /* Aligns buttons to the left */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #ff6f00; /* Orange text */
+    background-color: #111; /* Matches the dark background */
+    border: 3px solid #111; /* First border black */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: #fff; /* White text on hover */
+    background-color: #ff6f00; /* Orange background on hover */
+    border-color: #ff6f00; /* Orange border on hover */
+}

@@ -1,0 +1,206 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222; /* Dark navbar background */
+    padding: 15px 30px;
+    border-bottom: 2px solid #ff6f00; /* Orange border */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ff6f00; /* Orange text */
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f0f0f0; /* Light text */
+    padding: 5px 20px;
+    transition: background 0.3s;
+    border-left: 2px solid #ff6f00; /* Orange border between buttons */
+}
+
+.nav-links a:first-child {
+    border-left: none; /* Remove border from the first button */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 111, 0, 0.2); /* Orange highlight on hover */
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    color: #ff6f00; /* Orange color */
+    font-size: 45px; /* Adjust font size as needed */
+    font-weight: bold; /* Make it bold */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Main content styling */
+.main-content {
+    width: 50%;
+    margin-right: 5%;
+    margin-left: 25%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222; /* Dark background */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+.main-content:hover {
+    transform: scale(1.05); /* Grow the content by 5% */
+}
+
+/* Flip container */
+.flip-container {
+    perspective: 1000px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0);
+    transition: transform 0.6s;
+}
+
+/* Front side of the flip card */
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hide images */
+    transition: opacity 0.5s ease-in-out;
+    left: 0;
+}
+
+.slideshow-container img.active {
+    opacity: 1; /* Show active image */
+}
+
+/* Front-side image */
+.flip-card-front .flip-card-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flip-card-front h2 {
+    color: #ff6f00; /* Orange text */
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.flip-card-front .more-btn {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    margin-left: 0;
+}
+
+.flip-card-front .more-btn:hover {
+    background-color: #e05a00;
+}
+
+/* Back side of the flip card */
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    color: #f0f0f0;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    color: #ff6f00; /* Orange text */
+}
+
+.flip-card-back p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Back button styling */
+.back-btn {
+    background-color: #ff6f00;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.back-btn:hover {
+    background-color: #e05a00;
+}
+
+/* Flip effect on button click */
+.flip-card.flip {
+    transform: rotateY(180deg);
+}
