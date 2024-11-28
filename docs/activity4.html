@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Dark background */
+            color: #f0f0f0; /* Light text */
+            line-height: 1.6;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222; /* Dark navbar background */
+            padding: 15px 30px;
+            border-bottom: 2px solid #ff6f00; /* Orange bottom border */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: #ff6f00; /* Orange logo text */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #f0f0f0; /* Light text */
+            padding: 5px 20px;
+            transition: background 0.3s;
+            border-left: 2px solid #ff6f00; /* Orange line between buttons */
+        }
+
+        .nav-links a:first-child {
+            border-left: none; /* No border on the first link */
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 111, 0, 0.2); /* Orange background on hover */
+            border-radius: 5px;
+        }
+
+        /* Main container styling */
+        .main-container {
+            display: flex;
+            flex-wrap: wrap; /* Makes it responsive */
+            justify-content: center; /* Centers the content horizontally */
+            align-items: center; /* Centers the content vertically */
+            padding: 20px;
+            margin: 20px auto; /* Centers the container */
+            margin-top: 50px;
+            max-width: 1500px; /* Restricts the container width */
+            background-color: #222; /* Dark background */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Left side image */
+        .main-image {
+            flex: 1 1 40%; /* Allows flexibility for resizing */
+            margin: 10px;
+            text-align: center; /* Centers the image in its container */
+        }
+
+        .main-image img {
+            width: 100%; /* Scales nicely within the container */
+            max-width: 600px; /* Limits the maximum width */
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ff6f00; /* Orange border */
+        }
+
+        /* Right side content */
+        .main-content {
+            flex: 1 1 50%; /* Allows flexibility for resizing */
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff6f00; /* Orange heading */
+        }
+
+        .main-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #f0f0f0; /* Light text */
+            margin-bottom: 20px;
+        }
+
+        /* Buttons container */
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px; /* Space between buttons */
+            justify-content: flex-start; /* Aligns buttons to the left */
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: #ff6f00; /* Orange text */
+            background-color: #111; /* Matches the dark background */
+            border: 3px solid #111; /* First border black */
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            color: #fff; /* White text on hover */
+            background-color: #ff6f00; /* Orange background on hover */
+            border-color: #ff6f00; /* Orange border on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../docs/IMAGE/mainlogo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">Portfolio</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="../docs/HTML/profile.html">Profile</a>
+            <a href="../docs/HTML/more.html">More</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Left side image -->
+        <div class="main-image">
+            <img src="../docs/IMAGE/pic1.jpg" alt="Main Image" class="image">
+        </div>
+
+        <!-- Right side content -->
+        <div class="main-content">
+            <h1>Fernando Espinosa</h1>
+            <p>
+                Welcome to my portfolio website! Here, you’ll find more about my personal projects and interests. 
+                I’m a student at City of Malabon University, currently exploring different IT projects, like setting up 
+                network scenarios in Cisco Packet Tracer and coding with Node.js and Express.
+            </p>
+            <p>
+                In my portfolio, you’ll see some of my completed projects, ongoing work, and experiments in IT, 
+                including network configurations, web applications, and other innovative solutions. I aim to showcase 
+                not only my technical abilities but also my creativity and problem-solving skills.
+            </p>
+            <p>
+                I’m passionate about applying what I learn to real-world scenarios and always eager to improve my skills. 
+                Outside of school, I love playing online games like League of Legends and Valorant, as well as playing the guitar.
+            </p>
+            
+            <!-- Styled Buttons -->
+            <div class="button-container">
+                <a href="../docs/HTML/profile.html" class="button">View Profile</a>
+                <a href="../docs/HTML/more.html" class="button">More Information</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
